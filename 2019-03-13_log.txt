@@ -1,0 +1,9 @@
+[mié, 08:46:43] New user connected: Lara
+[mié, 08:46:51] [Lara]: hola, hay alguien?
+[mié, 08:47:10] New user connected: Juan
+[mié, 08:47:12] [Juan]: Hola
+[mié, 08:47:39] [Lara]: Hola
+[mié, 09:12:43] [Juan]: null
+[mié, 09:12:44] [Juan]: null
+[mié, 09:12:47] [Lara]: null
+[mié, 09:12:47] [Lara]: null
