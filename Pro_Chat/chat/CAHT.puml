@@ -1,0 +1,33 @@
+@startuml
+annotation java.lang.Override
+class chat.client.Client
+class chat.client.ReadThread
+class chat.client.WriteThread
+class chat.server.MultiServerThread
+class chat.server.Server
+class consolereader.ConsoleReader
+class java.lang.Thread
+class java.text.DateFormat
+class java.text.SimpleDateFormat
+class java.util.logging.Level
+class java.util.logging.Logger
+chat.client.Client ..> java.util.logging.Level
+chat.client.Client ..> java.util.logging.Logger
+chat.client.ReadThread ..> java.lang.Override
+chat.client.ReadThread --|> java.lang.Thread
+chat.client.ReadThread ..> java.util.logging.Level
+chat.client.ReadThread ..> java.util.logging.Logger
+chat.client.WriteThread ..> java.lang.Override
+chat.client.WriteThread ..> consolereader.ConsoleReader
+chat.client.WriteThread --|> java.lang.Thread
+chat.client.WriteThread ..> java.util.logging.Level
+chat.client.WriteThread ..> java.util.logging.Logger
+chat.server.MultiServerThread ..> java.lang.Override
+chat.server.MultiServerThread --|> java.lang.Thread
+chat.server.MultiServerThread ..> java.util.logging.Level
+chat.server.MultiServerThread ..> java.util.logging.Logger
+chat.server.Server ..> java.text.DateFormat
+chat.server.Server ..> java.text.SimpleDateFormat
+chat.server.Server ..> java.util.logging.Level
+chat.server.Server ..> java.util.logging.Logger
+@enduml
